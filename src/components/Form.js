@@ -27,10 +27,7 @@ function Form({ setItems, items, handleTotalItems }) {
         setInputValue("");
         handleTotalItems.current();
       } else return null;
-    } else
-      return setError(
-        "*You need to write a longer words and avoid blank spaces"
-      );
+    } else return setError("*Minimum three characters and avoid blank spaces");
   };
   return (
     <div>
